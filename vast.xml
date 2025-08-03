@@ -4,20 +4,28 @@
     <InLine>
       <AdSystem>Custom</AdSystem>
       <AdTitle>Video 300x250</AdTitle>
+
+      <!-- Impresiones: Ad Manager te dará una URL/macro de tracking -->
+      <Impression><![CDATA[%%PATTERN:IMPRESSION_URL%%]]></Impression>
+
       <Creatives>
         <Creative>
           <Linear>
             <Duration>00:00:30</Duration>
+
             <VideoClicks>
-              <!-- Si Ad Manager te da una macro de click tracking, agrégala aquí -->
+              <!-- ClickTracking: cuenta clics (macro que te da Ad Manager) -->
               <ClickTracking><![CDATA[%%CLICK_URL_UNESC%%]]></ClickTracking>
+              <!-- ClickThrough: destino final -->
               <ClickThrough><![CDATA[https://gabinetedeseguridad.gob.mx/]]></ClickThrough>
             </VideoClicks>
+
             <MediaFiles>
-              <MediaFile delivery="progressive" type="video/mp4" width="300" height="250" codec="avc1.42E01E">
+              <MediaFile delivery="progressive" type="video/mp4" width="300" height="250" codec="avc1.42E01E" bitrate="800">
                 <![CDATA[https://oliverlfj.github.io/vast-anuncios/anuncio_final.mp4]]>
               </MediaFile>
             </MediaFiles>
+
           </Linear>
         </Creative>
       </Creatives>
