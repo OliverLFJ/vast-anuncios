@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VAST version="4.1">
+  <Ad id="1">
+    <InLine>
+      <AdSystem>Custom</AdSystem>
+      <AdTitle>Video 300x250</AdTitle>
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:30</Duration>
+            <VideoClicks>
+              <!-- Si Ad Manager te da una macro de click tracking, agrégala aquí -->
+              <ClickTracking><![CDATA[%%CLICK_URL_UNESC%%]]></ClickTracking>
+              <ClickThrough><![CDATA[https://gabinetedeseguridad.gob.mx/]]></ClickThrough>
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile delivery="progressive" type="video/mp4" width="300" height="250" codec="avc1.42E01E">
+                <![CDATA[https://oliverlfj.github.io/vast-anuncios/anuncio_final.mp4]]>
+              </MediaFile>
+            </MediaFiles>
+          </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>
